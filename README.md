@@ -14,7 +14,14 @@ This repository provides an autonomous skill definition (`SKILL.md`) for AI agen
 - `scripts/` — Reusable helper scripts for multi-modal generation.
 
 ## 🚀 How Agents Use This Skill
-Agents can install or inspect `SKILL.md` to trigger zero-key sign-in via `npx @pollinations/cli` or direct REST API requests against `gen.pollinations.ai`.
+Agents can install or inspect `SKILL.md` to run creative multi-modal workflows powered by `@pollinations/cli` and `gen.pollinations.ai`.
+
+## 🔑 Sign-in & Authentication
+Users and agents sign in directly with Pollinations using the official device flow:
+```bash
+npx @pollinations/cli auth login --no-browser
+```
+This opens `https://enter.pollinations.ai/device` to authorize directly with your Pollinations account. For web and browser workflows, visitors sign in with Pollinations via the official OAuth `/authorize` link (`https://enter.pollinations.ai/authorize`) or the official `<polli-connect>` drop-in component. Never requires pasting raw `sk_` keys or creating custom `pk_` App Keys.
 
 ---
 Built with ❤️ for [Pollinations.ai](https://pollinations.ai).

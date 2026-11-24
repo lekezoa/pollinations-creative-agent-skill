@@ -22,6 +22,17 @@ An autonomous agent skill following the [AgentSkills.io](https://agentskills.io)
 3. **Multi-Modal Scene Compositor:**
    - Combines generated imagery with synchronized voiceover into short creative media previews via standard FFmpeg automation.
 
+## Authentication & Sign-in
+
+Users and autonomous agents authenticate with Pollinations using the official device login flow:
+
+```bash
+# Non-interactive device authentication
+npx @pollinations/cli auth login --no-browser
+```
+
+The CLI outputs the verification URL (`https://enter.pollinations.ai/device?user_code=...`) where the user signs in with their Pollinations account. For web interfaces, users authenticate via the official Pollinations OAuth `/authorize` link or the `<polli-connect>` drop-in component.
+
 ## Quick CLI Usage for Agents
 
 ```bash
