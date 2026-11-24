@@ -2,7 +2,7 @@
 
 > An Agent Skill in the [AgentSkills.io](https://agentskills.io) format enabling autonomous coding agents to generate multi-modal creative art, soundscapes, and videos using Pollinations AI. Built for Pollinations AI Quest [#20020](https://github.com/pollinations/pollinations/issues/20020).
 
-[![Made with pollinations.ai](https://pollinations.ai/badges/made_with_pollinations_cyan.svg)](https://pollinations.ai)
+[![Made with pollinations.ai](https://raw.githubusercontent.com/pollinations/pollinations/main/packages/ui/src/brand/badge-made-with.svg)](https://pollinations.ai/?ref=badge)
 
 ---
 

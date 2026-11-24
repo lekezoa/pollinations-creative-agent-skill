@@ -16,7 +16,7 @@ An autonomous agent skill following the [AgentSkills.io](https://agentskills.io)
 ## Capabilities
 
 1. **AI Visual Concept Generation:**
-   - Synthesizes 4K/HD digital concept art, pixel game sprites, and graphic assets via Pollinations image endpoints (`flux`, `turbo`).
+   - Synthesizes 4K/HD digital concept art, pixel game sprites, and graphic assets via Pollinations image endpoints (`flux`, `z-image-turbo`).
 2. **Ambient Soundscapes & Voiceover Synthesis:**
    - Generates character voiceovers and audio narration via `openai/gpt-audio-mini` or `openai/tts-1`.
 3. **Multi-Modal Scene Compositor:**
@@ -40,7 +40,7 @@ import json
 import base64
 
 def generate_scene(prompt, style="cinematic"):
-    url = f"https://image.pollinations.ai/prompt/{urllib.parse.quote(prompt)}?width=1920&height=1080&model=flux&seed=42"
+    url = f"https://gen.pollinations.ai/image/{urllib.parse.quote(prompt)}?width=1920&height=1080&model=flux&seed=42"
     urllib.request.urlretrieve(url, "concept_art.jpg")
     print("Concept art saved: concept_art.jpg")
 
